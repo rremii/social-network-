@@ -44,6 +44,44 @@ body {
       
       /* PADDING */
       padding: 20px;
+
+      /* FLEX */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.left-div form {
+      /* SIZE */
+      width: 100%;
+
+      /* FLEX */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+.aller-div {
+      /* FLEX */
+      display: flex;
+      justify-content: flex-start;
+      width: 80%;
+      margin-bottom: 10px;
+      color: rgb(199, 115, 255);
+      text-shadow: 0px 0px 6px rgb(199, 115, 255);
+}
+
+.left-div input {
+      width: 80%;
+      background-color: transparent;
+      border: none;
+      background-color: rgb(255, 255, 255, 0.1);
+      padding: 14px 20px;
+}
+
+.left-div input::placeholder {
+      color: white;
 }
 
 .right-div {
