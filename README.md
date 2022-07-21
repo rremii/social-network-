@@ -1,3 +1,3 @@
-﻿# social-network-
+># > Design: index.html 
 
-Check index.html page for design.
+    Check index.html page for design.
