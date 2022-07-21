@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+* {
+      padding: 0; margin: 0; font-family: 'Poppins', sans-serif; box-sizing: border-box;
+}
+
 body {
       /* SIZE */
       width: 100vw;
@@ -17,13 +23,179 @@ body {
 
 .login-div {
       /* SIZE */
-      width: 90vw;
-      height: 90vh;
+      width: 80vw;
+      height: 80vh;
 
-      /* COLOR & SHADOWS */
+      /* COLOR, RADIUS & SHADOWS */
       background-color: rgb(27, 27, 42);
       box-shadow: rgba(27, 27, 42 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
       -moz-box-shadow: rgba(27, 27, 42, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 	-webkit-box-shadow: rgba(27, 27, 42, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
       border-radius: 6px;
+
+      /* FLEX */
+      display: flex; justify-content: center; align-items: center;
 }
+
+.left-div {
+      /* SIZE */
+      width: 50%;
+      height: 100%;
+      
+      /* PADDING */
+      padding: 20px;
+}
+
+.right-div {
+      /* SIZE */
+      width: 50%;
+      height: 100%;
+      
+      /* BORDER RADIUS */
+      border-top-right-radius: 8px; border-bottom-right-radius: 8px;
+      
+      /* BACKGROUND IMAGE */
+      background-image: url("topbackground.jpg");
+      background-position: center;
+
+      /* PADDING */
+      padding: 20px;
+}
+
+
+/*|------------------------------------------------------------------------------------------|*/
+
+
+/* TEXT */
+span {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: rgb(69, 122, 192);
+  font-size: 124px;
+  letter-spacing: 8px;
+  cursor: pointer;
+  text-shadow: 0px 0px 10px rgba(27, 27, 42, 0.4);
+}
+
+span::before {
+  content: "RISONAR";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    rgb(86, 48, 112) 2px,
+    rgb(249, 120, 244) 4px
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+span::after {
+  content: "RISONAR";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    rgb(86, 48, 112) 2px,
+    rgb(249, 120, 244) 4px
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+span:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+span:hover:after {
+  top: -10px;
+  left: -10px;
+} 
+/* TEXT */
+
+
+/* SMALL PARA */
+article {
+      background: linear-gradient(
+        to right, 
+        rgb(199, 115, 255), 
+        rgb(175, 250, 255)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+}
+    
+body {
+      background: hsl(204 100% 5%);
+      
+      min-block-size: 100%;
+      min-inline-size: 100%;
+      box-sizing: border-box;
+      display: grid;
+      place-content: center;
+      font-family: system-ui;
+      font-size: min(200%, 5vmin);
+}
+    
+h1, p, body {
+      margin: 0;
+}
+    
+p {
+      font-family: "Dank Mono", ui-monospace, monospace;
+}
+
+.low-para {
+      font-weight: bold;
+}
+/* SMALL PARA */
+
+
+/* BLACK HOLE*/
+
+.animation-wrapper {
+      width: 25%;
+      padding-bottom: 50%;
+}
+    
+.sphere-animation {
+      position: absolute;
+      top: 70%;
+      left: 79.8%;
+      width: 200px;
+      height: 200px;
+      margin: -290px 0 0 -290px;
+}
+    
+.sphere path {
+      fill: url(#sphereGradient);
+      stroke-width: 1px;
+      stroke: hsl(204 100% 59%);
+      backface-visibility: hidden;
+}
+    
+@media (min-width: 500px) {
+      .sphere path {
+            stroke-width: 0.4px;
+      }
+}
+    /* BLACK HOLE */
+
+/*|------------------------------------------------------------------------------------------|*/
