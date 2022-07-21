@@ -49,6 +49,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column !important;
 }
 
 .left-div form {
@@ -59,7 +60,28 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column !important;
+}
+
+.mid-div {
+      /* SIZE */
+      width: 100%;
+
+      /* FLEX */
+      display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
+      position: absolute;
+      top: 150px;
+
+      /* COLOR */
+      color: rgb(199, 115, 255);
+      text-shadow: 0px 0px 6px rgb(199, 115, 255);
+}
+
+.h1-mid {
+      font-size: 50px !important;
 }
 
 .aller-div {
@@ -76,9 +98,31 @@ body {
       width: 80%;
       background-color: transparent;
       border: none;
-      background-color: rgb(255, 255, 255, 0.1);
       padding: 14px 20px;
+      margin-bottom: 45px;
+      transition: all ease 0.25s;
+      border: 2px solid rgb(249, 120, 244);
+      box-shadow: rgba(199, 115, 255, 0.4) -5px 5px, rgba(199, 115, 255, 0.3) -10px 10px, rgba(199, 115, 255, 0.2) -15px 15px, rgba(199, 115, 255, 0.1) -20px 20px, rgba(199, 115, 255, 0.05) -25px 25px;
 }
+
+.left-div input:hover {
+      background-color: rgb(38,44,66);
+      transition: all ease 0.25s;
+}
+
+.left-div input[type="submit"] {
+      margin-top: 30px;
+      color: rgb(199, 115, 255);
+      font-size: 1.25rem;
+      cursor: pointer;
+      transition: all ease 0.25s;
+}
+
+.left-div input[type="submit"]:hover {
+      background-color: rgb(38,44,66);
+      transition: all ease 0.25s;
+}
+
 
 .left-div input::placeholder {
       color: white;
@@ -111,11 +155,10 @@ span {
   left: 70%;
   transform: translate(-50%, -50%);
   display: block;
-  color: rgb(69, 122, 192);
+  color: rgb(199, 115, 255);
   font-size: 124px;
   letter-spacing: 8px;
   cursor: pointer;
-  text-shadow: 0px 0px 10px rgba(27, 27, 42, 0.4);
 }
 
 span::before {
@@ -127,7 +170,7 @@ span::before {
     transparent 0,
     transparent 2px,
     rgb(86, 48, 112) 2px,
-    rgb(249, 120, 244) 4px
+    rgb(199, 115, 255) 4px
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -135,6 +178,9 @@ span::before {
   left: 0;
   z-index: -1;
   transition: 1s;
+  text-shadow: 0px 15px 5px rgba(199, 115, 255, 0.2),
+                 10px 20px 5px rgba(199, 115, 255, 0.10),
+                 -10px 20px 5px rgba(0199, 115, 255, 0.05);
 }
 
 span::after {
@@ -146,7 +192,7 @@ span::after {
     transparent 0,
     transparent 2px,
     rgb(86, 48, 112) 2px,
-    rgb(249, 120, 244) 4px
+    rgb(199, 115, 255) 4px
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -180,28 +226,25 @@ article {
       text-align: center;
 }
     
-body {
-      background: hsl(204 100% 5%);
-      
-      min-block-size: 100%;
-      min-inline-size: 100%;
-      box-sizing: border-box;
-      display: grid;
-      place-content: center;
-      font-family: system-ui;
-      font-size: min(200%, 5vmin);
-}
-    
-h1, p, body {
-      margin: 0;
-}
-    
 p {
+      margin-top: 28px;
       font-family: "Dank Mono", ui-monospace, monospace;
+      text-shadow: 0px 15px 5px rgba(199, 115, 255, 0.2),
+      10px 20px 5px rgba(199, 115, 255, 0.10),
+      -10px 20px 5px rgba(0199, 115, 255, 0.05);
+      font-size: 23px;
 }
 
 .low-para {
       font-weight: bold;
+}
+
+.low-para-2 {
+      font-size: 33px !important;
+}
+
+.low-para-3 {
+      font-size: 40px !important;
 }
 /* SMALL PARA */
 
