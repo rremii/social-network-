@@ -1,0 +1,29 @@
+body {
+      /* SIZE */
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+
+      /* BACKGROUND COLOR PART */
+      background: rgb(38,44,66);
+      background: linear-gradient(180deg, rgba(38,44,66,1) 0%, rgba(38,44,66,1) 35%, rgba(78,89,119,1) 100%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-attachment: fixed;
+
+      /* FLEX PART */
+      display: flex; justify-content: center; align-items: center;
+}
+
+.login-div {
+      /* SIZE */
+      width: 90vw;
+      height: 90vh;
+
+      /* COLOR & SHADOWS */
+      background-color: rgb(27, 27, 42);
+      box-shadow: rgba(27, 27, 42 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      -moz-box-shadow: rgba(27, 27, 42, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+	-webkit-box-shadow: rgba(27, 27, 42, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      border-radius: 6px;
+}
